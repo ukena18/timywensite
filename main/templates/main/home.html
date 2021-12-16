@@ -1,0 +1,6 @@
+{% extends 'main/base.html' %}
+{% block content %}
+{% for ls in lists %}
+<a href="{% url 'todo' ls.id %}"><h1>{{ls.name}}</h1></a>
+{% endfor %}
+{% endblock %}
